@@ -8,7 +8,7 @@ git clone https://github.com/MajoroMask/my_docker.git
 cd my_docker
 ```
 
-## build image
+## Step 1: build image
 
 ```bash
 # build and see
@@ -17,7 +17,13 @@ bash ./build_r-dev_4.2.3.sh 0.0.1.9000
 docker images
 ```
 
-## run container
+## Alternative step 1: pull from docker hub
+
+```bash
+docker pull sunamask/r-dev_4.2.3:0.0.1.9000
+```
+
+## Step 2: run container
 
 ```bash
 mkdir -p ./server_settings/rstudio/local_share
