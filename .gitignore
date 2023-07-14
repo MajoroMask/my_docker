@@ -1,0 +1,4 @@
+.DS_Store
+build_logs
+server_settings/rstudio/local_*
+fonts

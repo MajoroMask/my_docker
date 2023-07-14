@@ -1,0 +1,5 @@
+# /etc/rstudio/profiles
+# https://docs.rstudio.com/ide/server-pro/r_sessions/user_and_group_profiles.html
+
+[*]
+session-timeout-minutes=0

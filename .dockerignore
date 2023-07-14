@@ -1,0 +1,10 @@
+*.tar.gz
+shiny_app
+shiny_background
+shinyproxy
+build_logs
+dockerfiles
+README
+build_*.sh
+run_*.sh
+zzz
