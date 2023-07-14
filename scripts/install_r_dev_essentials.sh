@@ -38,7 +38,6 @@ apt_install \
     libicu-dev \
     libssl-dev \
     libssh2-1-dev \
-    libssl1.1 \
     libxml2-dev
 
 R -q -e "install.packages('$URL_RENV', repos = NULL, type = 'source')"

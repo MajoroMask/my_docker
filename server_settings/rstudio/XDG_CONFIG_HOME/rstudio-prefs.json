@@ -36,7 +36,6 @@
         "console_right_on_top": false,
         "additional_source_columns": 0
     },
-    "show_indent_guides": true,
     "scroll_past_end_of_document": true,
     "highlight_r_function_calls": true,
     "rainbow_parentheses": true,
