@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-URL_RENV=${URL_RENV:-"https://cran.r-project.org/src/contrib/Archive/renv/renv_0.15.4.tar.gz"}
+URL_RENV=${URL_RENV:-"https://mirrors.tuna.tsinghua.edu.cn/CRAN/src/contrib/renv_1.0.3.tar.gz"}
 BIOC_REPO=${BIOC_REPO:-"https://mirrors.tuna.tsinghua.edu.cn/CRAN"}
 
 # a function to install apt packages only if they are not installed
@@ -29,6 +29,7 @@ apt_install \
     libudunits2-dev \
     libproj-dev \
     libgdal-dev \
+    libgmp3-dev \
     libbz2-dev \
     liblzma-dev \
     libcairo2-dev \
