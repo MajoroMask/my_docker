@@ -30,6 +30,9 @@ apt_install \
     libproj-dev \
     libgdal-dev \
     libgmp3-dev \
+    libmpc-dev \
+    libharfbuzz-dev \
+    libfribidi-dev \
     libbz2-dev \
     liblzma-dev \
     libcairo2-dev \

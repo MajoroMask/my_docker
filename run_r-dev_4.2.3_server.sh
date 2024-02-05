@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGE_VERSION=${1:-0.0.1.9002}
+IMAGE_VERSION=${1:-0.0.1.9004}
 PORT_RSTUDIO=8789
 DEFAULT_USER="r"
 CONTAINER_NAME="r-dev_4.2.3-$USER-$PORT_RSTUDIO"
@@ -22,4 +22,4 @@ docker run \
     -e GROUPID=`id -g $USER` \
     -e RENV_PATHS_ROOT=/renv_root \
     --entrypoint /home/$DEFAULT_USER/.config/docker_entrypoint.sh \
-    sunamask/r-dev_4.2.3:$IMAGE_VERSION
+    quay.io/giganticdiaper/r-dev_4.2.3:$IMAGE_VERSION

@@ -7,8 +7,8 @@
 
 FROM rocker/r-ver:4.2.3
 
-LABEL build.version="0.0.1.9003" \
-    build.date="2024-02-04" \
+LABEL build.version="0.0.1.9004" \
+    build.date="2024-02-05" \
     maintainer="nas@shenkebio.com"
 
 ENV DEFAULT_USER=r
