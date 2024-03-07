@@ -20,4 +20,4 @@ docker run \
     -e GROUPID=`id -g $USER` \
     -e RENV_PATHS_ROOT=/renv_root \
     --entrypoint /home/$DEFAULT_USER/.config/docker_entrypoint.sh \
-    sunamask/r-dev_4.2.3:$IMAGE_VERSION
+    quay.io/giganticdiaper/r-dev_4.2.3:$IMAGE_VERSION
