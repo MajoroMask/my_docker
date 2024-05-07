@@ -10,8 +10,10 @@ docker run \
     --rm -detach \
     -p $PORT_RSTUDIO:8787 \
     --mount type=bind,source=$HOME/renv_root,target=/renv_root \
-    --mount type=bind,source="$(pwd)"/server_settings/rstudio/XDG_CONFIG_HOME/,target=/home/$DEFAULT_USER/.config/rstudio \
-    --mount type=bind,source="$(pwd)"/server_settings/rstudio/local_share/,target=/home/$DEFAULT_USER/.local/share/rstudio \
+    --mount type=bind,source=$HOME/proj/,target=/home/$DEFAULT_USER/proj \
+    --mount type=bind,source=$HOME/work/,target=/home/$DEFAULT_USER/work \
+    --mount type=bind,source="$(pwd)"/server_settings/rstudio/r423/XDG_CONFIG_HOME/,target=/home/$DEFAULT_USER/.config/rstudio \
+    --mount type=bind,source="$(pwd)"/server_settings/rstudio/r423/local_share/,target=/home/$DEFAULT_USER/.local/share/rstudio \
     --mount type=bind,source="$(pwd)"/scripts/docker_entrypoint_r_dev.sh,target=/home/$DEFAULT_USER/.config/docker_entrypoint.sh \
     -e ROOT=true \
     -e DISABLE_AUTH=true \

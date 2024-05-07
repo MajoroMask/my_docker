@@ -1,4 +1,5 @@
 .DS_Store
 build_logs
-server_settings/rstudio/local_*
+server_settings/rstudio/XDG_*
+server_settings/rstudio/r*
 fonts

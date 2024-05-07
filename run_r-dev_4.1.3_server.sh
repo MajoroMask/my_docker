@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IMAGE_VERSION=${1:-0.0.1.9003}
-PORT_RSTUDIO=8788
+PORT_RSTUDIO=8787
 DEFAULT_USER="r"
 CONTAINER_NAME="r-dev_4.1.3-$USER-$PORT_RSTUDIO"
 
@@ -12,8 +12,9 @@ docker run \
     --mount type=bind,source=$HOME/renv_root,target=/renv_root \
     --mount type=bind,source=$HOME/proj/,target=/home/$DEFAULT_USER/proj \
     --mount type=bind,source=/data1,target=/data1 \
-    --mount type=bind,source="$(pwd)"/server_settings/rstudio/XDG_CONFIG_HOME/,target=/home/$DEFAULT_USER/.config/rstudio \
-    --mount type=bind,source="$(pwd)"/server_settings/rstudio/local_share/,target=/home/$DEFAULT_USER/.local/share/rstudio \
+    --mount type=bind,source=/data2023,target=/data2023 \
+    --mount type=bind,source="$(pwd)"/server_settings/rstudio/r413/XDG_CONFIG_HOME/,target=/home/$DEFAULT_USER/.config/rstudio \
+    --mount type=bind,source="$(pwd)"/server_settings/rstudio/r413/local_share/,target=/home/$DEFAULT_USER/.local/share/rstudio \
     --mount type=bind,source="$(pwd)"/scripts/docker_entrypoint_r_dev.sh,target=/home/$DEFAULT_USER/.config/docker_entrypoint.sh \
     -e ROOT=true \
     -e DISABLE_AUTH=true \

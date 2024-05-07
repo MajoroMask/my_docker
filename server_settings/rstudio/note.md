@@ -18,3 +18,7 @@
 ~/.config/rstudio, for each user
 ~/.local/share/rstudio, for each user
 ```
+
+# update 2024-05-07
+
+不同版本的R，对应的cache和server setting也应该分开管理
